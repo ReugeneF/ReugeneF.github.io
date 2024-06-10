@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+}
+
+body {
+  overflow-x: hidden; /* Hide scrollbars */
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    width: 100vw;
+  }
+  nav ul {
+    width: 100%;
+    border-radius: none;
+  }
+  .body-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .body-me .profile-picture {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  nav ul {
+    margin-top: 10px;
+    width: 90%;
+    border-radius: 32px;
+  }
+  .body-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .body-me .profile-picture {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  nav ul {
+    width: 90%;
+    border-radius: 32px;
+    margin-top: 10px;
+  }
+  .body-me .profile-picture {
+    width: 60%;
+  }
+}
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+nav ul {
+  height: 50px;
+  margin-bottom: 30px;
+  background-color: rgb(101, 181, 181);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:active {
+  color: darkblue;
+}
+nav ul li a:hover {
+  color: darkblue;
+}
+
+.body-styling {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.body-styling .body-me {
+  width: 90vw;
+  display: flex;
+}
+.body-styling .body-me .profile-picture {
+  margin-right: 100px;
+}
+.body-styling .body-me .profile-picture img {
+  border: solid 1px black;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+}
+.body-styling .body-me .small-info h2 {
+  font-size: 30px;
+}
+.body-styling .body-me .small-info p {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+}
+
+.contact-form-div {
+  display: flex;
+  justify-content: center;
+}
+.contact-form-div .contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+.contact-form-div .contact-form label {
+  font-weight: 400;
+}
+.contact-form-div .contact-form input {
+  height: 35px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: solid 1px darkgray;
+  text-align: center;
+}
+.contact-form-div .contact-form button {
+  color: white;
+  align-self: center;
+  border-radius: 8px;
+  height: 35px;
+  width: 40%;
+  border: solid 1px darkgray;
+  background-color: rgb(101, 181, 181);
+}
+.contact-form-div .contact-form button:hover {
+  background-color: rgb(60, 105, 105);
+}
+
+.work-experience-d {
+  display: flex;
+}
+.work-experience-d .work-experience-div {
+  display: flex;
+  align-items: center;
+  margin-left: -2px;
+}
+.work-experience-d .work-experience-div .work-experience {
+  height: 30px;
+  width: 30px;
+  border-radius: 16px;
+  background-color: gray;
+}
+.work-experience-d .work-experience-div .work-experience-text {
+  margin-left: -2px;
+  height: 10px;
+  width: 90px;
+  background-color: gray;
+}
+
+.sub-section {
+  display: flex;
+}
+.sub-section img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.skills-tab h1 {
+  font-size: 20px;
+  text-align: center;
+}
+.skills-tab .languages-tab {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 2rem;
+}
+.skills-tab .languages-tab p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.skills-tab .languages-tab .languages-image-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: solid gray 2px;
+  padding: 5px;
+  border-radius: 32px 32px 0px 0px;
+}
+.skills-tab .languages-tab .languages-image-holder img {
+  width: 75px;
+  height: 75x;
+}
+
+.body-styling-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.body-styling-projects h2 {
+  font-size: 2rem;
+  background-color: rgba(101, 181, 181, 0.452);
+  width: 50%;
+  text-align: center;
+  margin-bottom: 2%;
+  border: solid 2px gray;
+  border-radius: 16px;
+}
+
+.top-projects {
+  width: 90vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2%;
+}
+.top-projects div {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.top-projects div button {
+  background-color: rgba(101, 181, 181, 0.536);
+  color: white;
+  border: none;
+  height: 25%;
+}
+.top-projects div button:hover {
+  background-color: rgb(101, 181, 181);
+}
+
+.extra-projects {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 1rem;
+  justify-content: center;
+}
+.extra-projects a {
+  width: 30%;
+}
+.extra-projects a img {
+  width: 100%;
+}
+
+footer {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(101, 181, 181, 0.627);
+}
+footer a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+}
+footer a img {
+  height: 80%;
+}
+footer a p {
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 5px;
+}
+footer a:hover p {
+  color: black;
+}
+footer h3 {
+  color: white;
+  font-size: 1.5rem;
+  width: 20%;
+}/*# sourceMappingURL=style.css.map */
